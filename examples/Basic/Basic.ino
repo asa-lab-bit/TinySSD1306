@@ -5,7 +5,6 @@ SoftI2C_VPORT i2c(1, 2);   // SDA=PA1, SCL=PA2
 TinySSD1306 oled(i2c);
 
 int counter = 0;
-int temp = 25;
 
 void setup()
 {
@@ -16,9 +15,7 @@ oled.setCursor(0,0);
 oled.print("TinySSD1306");
 
 oled.setCursor(0,2);
-oled.print("Temp=");
-oled.print(temp);
-oled.print("C");
+oled.print("Temp=25");
 
 oled.setCursor(0,4);
 oled.print("Count;");
